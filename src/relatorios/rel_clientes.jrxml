@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rel_clientes" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="249b16f2-09de-4832-bee2-c60a0493b4e9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="52"/>
+	<queryString>
+		<![CDATA[ select*from tbclientes]]>
+	</queryString>
+	<field name="id_cliente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sexo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cep" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Rua" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cidade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="referencia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bairro" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="uf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_nascimento" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cnpj" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apelido" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="observacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rede_social" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="situacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="162" splitType="Stretch">
+			<staticText>
+				<reportElement x="239" y="10" width="120" height="20" uuid="94ab7489-3e06-4131-87d4-3a3cf0a5bb48"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[BAU SANTA LUZIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="30" width="120" height="20" uuid="d89cda4c-e13a-4cca-b7c3-154df3eb59b4"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[IND. E COM. LTDA - ME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="92" width="416" height="20" uuid="d9dcbfb7-3033-40e4-a372-6fc2e7242357"/>
+				<text><![CDATA[Av. Perimetral Qd. 01 Lt. 02 Bairro: Goiânia II - CEP. 74.665-510 - Goiânia - Goiàs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="10" width="148" height="20" uuid="5b119a94-0b7f-455a-b4ca-8a53dfdac80a"/>
+				<text><![CDATA[C.N.P.J.: 01.863.510/0001-55]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="50" width="127" height="20" uuid="8170393d-cf07-47de-a827-896e72a3baea"/>
+				<text><![CDATA[Insc.Munic.: 129.986-7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="128" width="113" height="20" uuid="8b30d6f4-716b-4993-aa82-3580d5640517"/>
+				<text><![CDATA[Relatório de Clientes]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="10" width="200" height="55" uuid="128902f8-eab8-47fc-8118-61c68adf71ab"/>
+				<imageExpression><![CDATA["C:\\Users\\Gessione\\Documents\\NetBeansProjects\\Vitrine\\src\\br\\com\\vitrine\\icones\\logotl-03640765-A01 (1).jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="72" width="181" height="20" uuid="41b9a737-8a1b-4eb8-998e-b0f3e4005801"/>
+				<text><![CDATA[Fone: (62) 3205-7322 / 9.9972-2331]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="30" width="127" height="20" uuid="ccfb44a1-5327-4a9d-a4bc-a91cf496cbd8"/>
+				<text><![CDATA[Insc.Est.: 10.341.93-7]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="51" height="20" uuid="f984092a-1dd1-43b5-9354-df522a26a083"/>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="0" width="100" height="20" uuid="85030b60-20b7-486e-8f92-02f55db1ff79"/>
+				<text><![CDATA[nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="2" width="100" height="20" uuid="90d47501-4688-4181-a2e2-2130a09f0c83"/>
+				<text><![CDATA[cpf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="303" y="2" width="100" height="20" uuid="ffee8f66-adfc-417b-99eb-e76721980adc"/>
+				<text><![CDATA[email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="2" width="100" height="20" uuid="68229122-7bd0-49e4-b1e7-1fc6b7f3869d"/>
+				<text><![CDATA[telefone]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="5" width="51" height="20" uuid="eaab6fc3-fd86-4a3f-bfaa-890378f4a831"/>
+				<textFieldExpression><![CDATA[$F{id_cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="81" y="5" width="100" height="20" uuid="c69bbe3b-2c2c-4e3b-9985-a6598926189d"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="193" y="5" width="100" height="20" uuid="02781db2-ce57-4945-af4a-8aa2d3d21380"/>
+				<textFieldExpression><![CDATA[$F{cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="303" y="5" width="100" height="20" uuid="6d241b9c-bcbf-4715-ab64-7a70df736cec"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="5" width="100" height="20" uuid="920e451c-e4a4-44d8-b409-a23cd08d3707"/>
+				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="436" y="34" width="80" height="20" uuid="d26fd0d7-ba3d-4350-8f80-baf23b34ff10"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="516" y="34" width="40" height="20" uuid="44cf5101-0838-479f-b6f2-4befd0b169bb"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rel_ordem_servico_cancelada" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="53925f7d-f51f-4116-9001-9506babce958">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM tbos WHERE situacao = 'CANCELADA']]>
+	</queryString>
+	<field name="Os" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_os" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="situacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="placa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="prazo_entrega" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="condicao_pagamento" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="servico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="observacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tecnico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_cliente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="147" splitType="Stretch">
+			<staticText>
+				<reportElement x="411" y="30" width="127" height="20" uuid="ca6ead6b-2849-4e13-8f5d-470c4a1cebf2"/>
+				<text><![CDATA[Insc.Est.: 10.341.93-7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="91" width="416" height="20" uuid="5d759c2d-d21a-44d4-b3b7-c454b29e4220"/>
+				<text><![CDATA[Av. Perimetral Qd. 01 Lt. 02 Bairro: Goiânia II - CEP. 74.665-510 - Goiânia - Goiàs]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="10" width="200" height="55" uuid="8eebc7eb-21df-4f93-a5c6-d4b9aba5b8a4"/>
+				<imageExpression><![CDATA["C:\\Users\\Gessione\\Documents\\NetBeansProjects\\Vitrine\\src\\br\\com\\vitrine\\icones\\logotl-03640765-A01 (1).jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="175" y="111" width="236" height="20" uuid="b01311ba-c838-4e4f-a3c7-5a764fcc5099"/>
+				<text><![CDATA[Relatório de Ordens de Serviços Canceladas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="10" width="120" height="20" uuid="a27698e1-b758-4e00-a845-705b81e89b54"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[BAU SANTA LUZIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="30" width="120" height="20" uuid="0a57d9b0-21c5-4518-a640-356652ecfd42"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[IND. E COM. LTDA - ME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="10" width="148" height="20" uuid="3ef4c5f6-ea76-4cfb-918e-624bdfaf18fd"/>
+				<text><![CDATA[C.N.P.J.: 01.863.510/0001-55]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="50" width="127" height="20" uuid="3801a598-413b-4035-9246-48a7356330fd"/>
+				<text><![CDATA[Insc.Munic.: 129.986-7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="71" width="181" height="20" uuid="58552dc5-8d34-4115-9c78-2874d7504ff0"/>
+				<text><![CDATA[Fone: (62) 3205-7322 / 9.9972-2331]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="244" y="2" width="100" height="20" uuid="ca0dc951-a139-4b4d-b46f-fff00818b732"/>
+				<text><![CDATA[situacao]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="3" width="100" height="20" uuid="aeffdc20-3bfc-4c0b-8d06-4ab0b19657f2"/>
+				<text><![CDATA[valor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="2" width="81" height="20" uuid="d18cc3c6-5e06-4f82-be0a-9f601a51fc29"/>
+				<text><![CDATA[Código Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="3" width="100" height="20" uuid="da7705e1-2d22-4a1a-898c-1347267fef85"/>
+				<text><![CDATA[Nº ORDEM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="3" width="100" height="20" uuid="a00c8782-2329-4f3b-8d43-4f3698b681f8"/>
+				<text><![CDATA[Data Emissão]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="1" width="100" height="20" uuid="ef16efbf-e72a-4f52-90e7-041ed3066e27"/>
+				<textFieldExpression><![CDATA[$F{Os}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="1" width="100" height="20" uuid="861abbd9-ec1b-4ee8-8b05-5a310f18ba39"/>
+				<textFieldExpression><![CDATA[$F{data_os}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="1" width="100" height="20" uuid="55fe8170-8b13-4685-adeb-6279d24a988a"/>
+				<textFieldExpression><![CDATA[$F{situacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="0" width="100" height="20" uuid="e53ba4c1-8b93-4976-a190-215501436969"/>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="474" y="0" width="81" height="20" uuid="e50a7731-e5c7-4837-a22f-1a55d8090090"/>
+				<textFieldExpression><![CDATA[$F{id_cliente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

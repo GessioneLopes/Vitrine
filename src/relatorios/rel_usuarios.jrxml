@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rel_usuarios" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="87a5c44f-2ec8-4692-8e2c-6a090cff6077">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="11"/>
+	<queryString>
+		<![CDATA[select*from tbusuarios]]>
+	</queryString>
+	<field name="id_usuario" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="login" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="senha" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="perfil" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="situacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="11" width="200" height="55" uuid="a5d7ac4d-abb6-4237-ae33-10744c405596"/>
+				<imageExpression><![CDATA["C:\\Users\\Gessione\\Documents\\NetBeansProjects\\Vitrine\\src\\br\\com\\vitrine\\icones\\logotl-03640765-A01 (1).jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="401" y="11" width="148" height="20" uuid="5b67ef45-ba62-4d00-86aa-2b7c29cfdcff"/>
+				<text><![CDATA[C.N.P.J.: 01.863.510/0001-55]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="31" width="127" height="20" uuid="f0464d4b-0669-4ca6-a8b7-c3f27159c9d0"/>
+				<text><![CDATA[Insc.Est.: 10.341.93-7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="51" width="127" height="20" uuid="add3f6e7-0afb-4ec9-bcf1-29603cf09544"/>
+				<text><![CDATA[Insc.Munic.: 129.986-7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="11" width="120" height="20" uuid="821fdcd0-342f-45a1-991a-0bd2f73b46e4"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[BAU SANTA LUZIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="31" width="120" height="20" uuid="53139610-e3e8-4e58-9b29-0586cbf179ac"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[IND. E COM. LTDA - ME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="112" width="113" height="20" uuid="22d48d76-96c8-4e59-b2ca-fc56b5227cb0"/>
+				<text><![CDATA[Relatório de Usuários]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="72" width="181" height="20" uuid="df282100-45ce-44f5-9d6a-842b5b06d549"/>
+				<text><![CDATA[Fone: (62) 3205-7322 / 9.9972-2331]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="92" width="416" height="20" uuid="9fa4e0ea-ff19-414c-9457-b31693e8ce56"/>
+				<text><![CDATA[Av. Perimetral Qd. 01 Lt. 02 Bairro: Goiânia II - CEP. 74.665-510 - Goiânia - Goiàs]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="67" y="2" width="100" height="20" uuid="1d0d0add-686d-4c04-8447-024d85d250ae"/>
+				<text><![CDATA[usuario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="2" width="60" height="20" uuid="78de0a31-90b4-4101-8f63-a6eae66c84ed"/>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="2" width="100" height="20" uuid="95d7c761-68a0-49fe-a4c7-52de53cd331b"/>
+				<text><![CDATA[telefone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="2" width="100" height="20" uuid="ce02fdbb-1d9d-444d-992c-789628a48aaa"/>
+				<text><![CDATA[login]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="2" width="100" height="20" uuid="387a8452-dcb1-4b25-afc7-def647d9a3f6"/>
+				<text><![CDATA[perfil]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="4" width="60" height="20" uuid="3e545ccc-299d-4bf1-84df-913193f972e4"/>
+				<textFieldExpression><![CDATA[$F{id_usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="4" width="100" height="20" uuid="ea886675-d31a-4e48-9e33-3c7a101a4e99"/>
+				<textFieldExpression><![CDATA[$F{usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="179" y="4" width="100" height="20" uuid="dfc8adc7-6a18-4cbd-9968-7aec40fee0df"/>
+				<textFieldExpression><![CDATA[$F{login}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="291" y="4" width="100" height="20" uuid="37efbb86-946f-4619-84a7-74db4dcf2a60"/>
+				<textFieldExpression><![CDATA[$F{perfil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="4" width="100" height="20" uuid="d239d573-021b-415f-a1aa-be96f8d6be33"/>
+				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="431" y="34" width="80" height="20" uuid="0b38d158-d775-4620-a83b-ed9bd974d042"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="511" y="34" width="40" height="20" uuid="79e8ed6b-7bad-479f-aff8-73e8227d3a6e"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

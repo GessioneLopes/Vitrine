@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="impressao_ordem_servico" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f3eb7c09-aef5-420c-b49a-bf81c65bc70e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="102"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="dataset1" uuid="d0bd0092-385a-4f67-bbf7-80954caf547b"/>
+	<queryString>
+		<![CDATA[select
+tbos.os as OS,date_format(tbos.data_os,'%d/%m/%Y - %H:%i') as data,
+tbos.tipo as tipo_OS,tbos.situacao,
+tbos.servico as serviço,tbos.valor,
+tbclientes.nome as cliente,tbclientes.telefone as telefone
+from tbos inner join tbclientes on tbos.id_cliente = tbclientes.id_cliente]]>
+	</queryString>
+	<field name="OS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data" class="java.lang.String"/>
+	<field name="tipo_OS" class="java.lang.String"/>
+	<field name="situacao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="serviço" class="java.lang.String"/>
+	<field name="valor" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cliente" class="java.lang.String"/>
+	<field name="telefone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="151" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="10" width="200" height="55" uuid="4cacabeb-e349-4d8f-b46e-fa586ae24b2d"/>
+				<imageExpression><![CDATA["C:\\Users\\Gessione\\Documents\\NetBeansProjects\\Vitrine\\src\\br\\com\\vitrine\\icones\\logotl-03640765-A01 (1).jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="239" y="30" width="120" height="20" uuid="4d110560-8135-45d8-ad11-bd67a5758f15"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[IND. E COM. LTDA - ME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="10" width="148" height="20" uuid="809ae712-313d-498c-ab2d-91a8a4be316a"/>
+				<text><![CDATA[C.N.P.J.: 01.863.510/0001-55]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="50" width="127" height="20" uuid="e0cf6970-edbb-4a14-8057-76931f9bee56"/>
+				<text><![CDATA[Insc.Munic.: 129.986-7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="91" width="416" height="20" uuid="8b0ed646-8d60-4477-a272-291ece083b45"/>
+				<text><![CDATA[Av. Perimetral Qd. 01 Lt. 02 Bairro: Goiânia II - CEP. 74.665-510 - Goiânia - Goiàs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="71" width="181" height="20" uuid="0f1b2467-0fa7-4204-b955-a195426844ec"/>
+				<text><![CDATA[Fone: (62) 3205-7322 / 9.9972-2331]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="10" width="120" height="20" uuid="dfb7d256-df26-494a-be8d-71437a7f760f"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[BAU SANTA LUZIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="30" width="127" height="20" uuid="bbef548e-b0a3-451d-aa68-73062539124f"/>
+				<text><![CDATA[Insc.Est.: 10.341.93-7]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="2" width="56" height="20" uuid="6d6470f0-d9ff-40bc-a13c-a881c250b170"/>
+				<text><![CDATA[Nº Ordem]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="2" width="79" height="20" uuid="9e1647c5-adb3-4d13-b6c3-db93c9651f90"/>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="181" y="0" width="58" height="20" uuid="7e7bccb3-d55e-4acc-93bd-81e9ee2163a0"/>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="6" width="43" height="20" uuid="55553017-b498-4440-91f5-b994c4203695"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="6" width="100" height="20" uuid="ff399891-29a0-46bb-aa0c-c09261ea0f29"/>
+				<text><![CDATA[serviço]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="2" width="100" height="20" uuid="b602ee16-6ac2-4b0b-8396-bdea40939c02"/>
+				<text><![CDATA[cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="459" y="2" width="85" height="20" uuid="d433c519-e8d9-43fe-ba05-395ab2f0d094"/>
+				<text><![CDATA[Valor Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="0" width="56" height="20" uuid="5bf9780d-e09c-4e84-9704-2ddc0e2926d2"/>
+				<textFieldExpression><![CDATA[$F{OS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="0" width="90" height="20" uuid="580dfbd5-80ad-49f4-9254-5952b8608611"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="0" width="43" height="20" uuid="05d3ddd2-25e9-4097-84b0-4314495d7508"/>
+				<textFieldExpression><![CDATA[$F{situacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="0" width="100" height="20" uuid="cdbedd58-e423-4b92-abc2-c388f73498e1"/>
+				<textFieldExpression><![CDATA[$F{serviço}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="0" width="100" height="20" uuid="de3bc398-461e-40d4-83b0-0b4a3bf6128d"/>
+				<textFieldExpression><![CDATA[$F{cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="459" y="0" width="81" height="20" uuid="c83f3aab-1bac-4c0a-9f09-58da8ae0b54b"/>
+				<textFieldExpression><![CDATA[$F{valor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="0" width="58" height="20" uuid="2193e06d-0b86-4b06-9e48-53cfb337d579"/>
+				<textFieldExpression><![CDATA[$F{tipo_OS}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="21"/>
+		<band height="39"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
